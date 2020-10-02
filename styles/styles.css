@@ -1,53 +1,59 @@
 body{
-    position: relative;
+    position:   relative;
     background: gray url("images/christmas.jpg") no-repeat;
-    margin: 0;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
+    margin:     0;
+    overflow:   hidden;
+    width:      100vw;
+    height:     100vh;
 
 }
 
 .container{
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    position:   relative;
+    top:        50%;
+    transform:  translateY(-50%);
     background: rgba(0,0,0,0.87);
-    width: 80vw;
-    height: 20vw;
-    margin: auto;
+    width:      80vw;
+    height:     20vw;
+    margin:     auto;
 
-    color: white;
-    text-align: center;
-    font-size: 2em;
-    font-family: "Open Sans", sans-serif;
-    overflow: hidden;
+    color:          white;
+    text-align:     center;
+    font-size:      2em;
+    font-family:    "Open Sans", sans-serif;
+    overflow:       hidden;
 }
 
 .container h1 {
-    text-align: center;
-    margin: 0;
-    font-size: 14vw;
-    line-height: 12vw;
+    text-align:     center;
+    margin:         0;
+    font-size:      14vw;
+    line-height:    12vw;
+    transition:     color 0.2s;
+}
+.container h1:hover{
+    color:  rgb(59, 73, 98);
+    cursor: pointer ;
 }
 .container span{
-    display: inherit;
-    width: 100%;
+    display:    inherit;
+    width:      100%;
 }
 .greet{
-    word-spacing: 3vw;
-    font-size: 2vw;
+    word-spacing:   3vw;
+    font-size:      2vw;
 }
 
 .names{
-    position: relative;
-    display: flex;
-    width: 100%;
-    font-size: 1.5vw;
+    position:   relative;
+    display:    flex;
+    width:      100%;
+    font-size:  1.5vw;
     margin-top: 0.5vh;
 }
 .names span{
-    display: inline-block;
-    align-content: center;
+    display:        inline-block;
+    align-content:  center;
 }
+
 

@@ -1,5 +1,16 @@
 let timeContainer = document.getElementById("time");
 
+timeContainer.addEventListener("mousedown",()=>{
+    //Coping timer to clipboard
+    let temp = document.createElement("textarea");
+    document.body.appendChild(temp);
+    temp.value = " This is how many days remained until new year: ";
+    temp.value += timeContainer.innerText
+    console.log(timeContainer.innerText);
+    temp.select();
+    document.execCommand("copy");
+    document.body.removeChild(temp);
+});
 
 function getTime(){
     let time = new Date();
